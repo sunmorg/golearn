@@ -37,8 +37,8 @@ func (c *circle) perim() float32 {
 func show(name string,params interface{}){
 	switch  params.(type) {
 	case geometry:
-		fmt.Println("area of %v is %v \n", name, params.(geometry).area())
-		fmt.Println("perim of %v is %v \n", name, params.(geometry).perim())
+		fmt.Printf("area of %v is %v \n", name, params.(geometry).area())
+		fmt.Printf("perim of %v is %v \n", name, params.(geometry).perim())
 	default:
 		fmt.Println("wrong type!!!")
 
